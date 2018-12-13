@@ -1,0 +1,9 @@
+For at sikre at brugerdata ikke bliver offentliggjordt under et SQL-injection angreb
+kan man bruge hash og salt. 
+
+Hashing genererer en værdi fra en string ved brug af en algortime. Herved bliver det
+indtaste string lavet om til en helt anden string.
+Salt er tilfældig data som bliver tilføjet det hashed data. På den måde er der ingen
+hashed værdier i databasen som er den samme.
+
+På den måde kan man gemme data i databasen, som ikke giver mening under for hackeren. 

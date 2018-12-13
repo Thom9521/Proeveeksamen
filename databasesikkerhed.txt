@@ -1,0 +1,10 @@
+Den første metode man kunne bruge mod et SQL-injection angreb er paramatized statements. 
+Det vil sige man kan tilføje parameters til værdierne i databasen. 
+Eksempel: 
+String user = "thomas";
+God:
+String sql = "SELECT * FROM costumers WHERE name = ?";
+Dårlig:
+String sql = "SELECT * FROM costumers WHERE name = '" + name + "'";
+
+

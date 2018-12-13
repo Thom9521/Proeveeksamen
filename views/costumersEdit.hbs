@@ -1,0 +1,69 @@
+<h1>Justér kunde</h1>
+<table>
+    <form action="/costumersEdit/put" method="POST">
+
+        <td>
+            <label><b>Hvilken konti skal justeres?</b></label>
+        </td>
+        <tr>
+            <td>
+                <label>ID:</label>
+            </td>
+            <td>
+                <input type="number" name="idPUT">
+            </td>
+            <td> <button type="submit" class="btn btn-dark">Find</button></td>
+        </tr>
+        <tr>
+            <td>
+
+                <label><b>Justeringer:</b></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Konto ejer:</label>
+            </td>
+            <td>
+                <input type="text" name="ownerPUT" value={{owner}}>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Kontonavn:</label>
+            </td>
+            <td>
+                <input type="text" name="account_namePUT">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Kontonummer:</label>
+            </td>
+            <td>
+                <input type="number" name="account_accountNumberPUT">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Saldo</label>
+            </td>
+            <td>
+                <input type="number" name="account_balancePUT">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Rente</label>
+            </td>
+            <td>
+                <input type="text" name="account_ratePUT">
+            </td>
+        </tr>
+
+</table>
+<br>
+<button type="submit" class="btn btn-dark">PUT</button>
+<br>
+
+</form>

@@ -1,0 +1,55 @@
+    <h1>Tilføj konti</h1>
+    <form action="/costumersAdd/post" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label>ID:</label>
+                </td>
+                <td>
+                    <input type="number" name="id">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Kundenavn:</label>
+                </td>
+                <td>
+                    <input type="text" name="costumer_name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Kontonavn:</label>
+                </td>
+                <td>
+                    <input type="text" name="account_name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Kontonummer:</label>
+                </td>
+                <td>
+                    <input type="number" name="account_accountNumber" required="" pattern="\d{8}">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Saldo</label>
+                </td>
+                <td>
+                    <input type="number" name="account_balance">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Rente</label>
+                </td>
+                <td>
+                    <input type="text" name="account_rate">
+                </td>
+            </tr>
+           
+
+        </table><button type="submit" id="tilføj">POST</button>
+    </form>

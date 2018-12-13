@@ -1,0 +1,23 @@
+<h1>{{title}}</h1>
+<br>
+<table class="table">
+      <thead class="thead-dark">
+
+    <tr>
+        <th>Unikt ID</th>
+        <th>ID</th>
+        <th>Navn</th>
+        <th>Status</th>
+        <th>Alder</th>
+    </tr>
+      </thead>
+    {{#each employees}}
+    <tr>
+        <td>{{_id}}</td>
+        <td>{{id}}</td>
+        <td>{{name}}</td>
+        <td>{{status}}</td>
+        <td>{{age}}</td>
+    </tr>
+    {{/each}}
+</table>

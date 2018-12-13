@@ -1,0 +1,20 @@
+body {
+  padding: 50px;
+  background-color: bisque;
+}
+
+a {
+  color: rgb(8, 185, 255);
+}
+
+#date{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.h1{
+  text-align: center;
+}
+
+/*Bootstrap er bl.a. anvendt til at style på .table*/

@@ -1,0 +1,40 @@
+<h1 class ="h1">Konti</h1>
+
+<div class="list-group">
+    <a href="costumersAdd" class="list-group-item list-group-item-action list-group-item-dark">Tilføj konto</a>
+    <a href="costumersEdit" class="list-group-item list-group-item-action list-group-item-dark">Justér konto (husk
+        ID)</a>
+
+</div>
+<table class="table">
+    <thead class="thead-dark">
+
+        <tr>
+            <th>Unikt ID</th>
+            <th>ID</th>
+            <th>Ejer</th>
+            <th>Kontonavn</th>
+            <th>Kontonummer</th>
+            <th>Saldo</th>
+            <th>Rente</th>
+            <th>Fjern</th>
+
+        </tr>
+    </thead>
+    {{#each costumers}}
+    <tr>
+        <td>{{_id}}</td>
+        <td>{{id}}</td>
+        <td>{{owner}}</td>
+        <td>{{account_name}}</td>
+        <td>{{account_accountNumber}}</td>
+        <td>{{account_balance}}</td>
+        <td>{{account_rate}}</td>
+        <td>
+            <form action="/costumers/delete/{{_id}}" method="POST">
+                <button>DELETE</button>
+            </form>
+        </td>
+    </tr>
+    {{/each}}
+</table>
