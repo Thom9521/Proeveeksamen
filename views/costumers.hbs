@@ -18,23 +18,31 @@
             <th>Saldo</th>
             <th>Rente</th>
             <th>Fjern</th>
+            <th>JSON</th>
 
         </tr>
     </thead>
     {{#each costumers}}
     <tr>
         <td>{{_id}}</td>
-        <td>{{id}}</td>
+        <td>{{uid}}</td>
         <td>{{owner}}</td>
         <td>{{account_name}}</td>
         <td>{{account_accountNumber}}</td>
-        <td>{{account_balance}}</td>
+        <td>{{account_balance}} kr</td>
         <td>{{account_rate}}</td>
-        <td>
-            <form action="/costumers/delete/{{_id}}" method="POST">
-                <button>DELETE</button>
+           <td>
+            <form action="/costumers/json/{{uid}}" method="GET">
+                <button class="btn btn-dark">JSON</button>
             </form>
         </td>
+        <td>
+            <form action="/costumers/delete/{{_id}}" method="POST">
+                <button class="btn btn-dark">DELETE</button>
+            </form>
+        </td>
+      
     </tr>
     {{/each}}
+ 
 </table>

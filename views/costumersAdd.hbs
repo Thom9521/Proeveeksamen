@@ -6,7 +6,7 @@
                     <label>ID:</label>
                 </td>
                 <td>
-                    <input type="number" name="id">
+                    <input type="number" name="uid" required="">
                 </td>
             </tr>
             <tr>
@@ -14,7 +14,7 @@
                     <label>Kundenavn:</label>
                 </td>
                 <td>
-                    <input type="text" name="costumer_name">
+                    <input type="text" name="costumer_name" required="">
                 </td>
             </tr>
             <tr>
@@ -22,7 +22,7 @@
                     <label>Kontonavn:</label>
                 </td>
                 <td>
-                    <input type="text" name="account_name">
+                    <input type="text" name="account_name" required="">
                 </td>
             </tr>
             <tr>
@@ -30,7 +30,7 @@
                     <label>Kontonummer:</label>
                 </td>
                 <td>
-                    <input type="number" name="account_accountNumber" required="" pattern="\d{8}">
+                    <input type="number" name="account_accountNumber" required="" pattern="\d{8}" >
                 </td>
             </tr>
             <tr>
@@ -38,7 +38,10 @@
                     <label>Saldo</label>
                 </td>
                 <td>
-                    <input type="number" name="account_balance">
+                    <input type="number" name="account_balance" required="">
+                </td>
+                <td>
+                    <label>kr</label>
                 </td>
             </tr>
             <tr>
@@ -46,7 +49,7 @@
                     <label>Rente</label>
                 </td>
                 <td>
-                    <input type="text" name="account_rate">
+                    <input type="text" name="account_rate" required="">
                 </td>
             </tr>
            

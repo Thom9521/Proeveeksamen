@@ -16,5 +16,8 @@ a {
 .h1{
   text-align: center;
 }
+ul{
+  list-style-type: none;
+}
 
 /*Bootstrap er bl.a. anvendt til at style på .table*/

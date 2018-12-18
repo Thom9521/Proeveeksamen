@@ -10,9 +10,8 @@
                 <label>ID:</label>
             </td>
             <td>
-                <input type="number" name="idPUT">
+                <input type="number" name="uidPUT" required="">
             </td>
-            <td> <button type="submit" class="btn btn-dark">Find</button></td>
         </tr>
         <tr>
             <td>
@@ -25,7 +24,7 @@
                 <label>Konto ejer:</label>
             </td>
             <td>
-                <input type="text" name="ownerPUT" value={{owner}}>
+                <input type="text" name="ownerPUT" required="" value={{owner}}>
             </td>
         </tr>
         <tr>
@@ -33,7 +32,7 @@
                 <label>Kontonavn:</label>
             </td>
             <td>
-                <input type="text" name="account_namePUT">
+                <input type="text" name="account_namePUT" required="" value="{{account_name}}">
             </td>
         </tr>
         <tr>
@@ -41,7 +40,7 @@
                 <label>Kontonummer:</label>
             </td>
             <td>
-                <input type="number" name="account_accountNumberPUT">
+                <input type="number" name="account_accountNumberPUT" required="">
             </td>
         </tr>
         <tr>
@@ -49,7 +48,10 @@
                 <label>Saldo</label>
             </td>
             <td>
-                <input type="number" name="account_balancePUT">
+                <input type="number" name="account_balancePUT" required="">
+            </td>
+            <td>
+                <label>kr</label>
             </td>
         </tr>
         <tr>
@@ -57,7 +59,7 @@
                 <label>Rente</label>
             </td>
             <td>
-                <input type="text" name="account_ratePUT">
+                <input type="text" name="account_ratePUT" required="">
             </td>
         </tr>
 
@@ -67,3 +69,28 @@
 <br>
 
 </form>
+
+
+<!--Testing som ikke virker endnu. Ville have værdierne fra document ind som values-->
+<!--
+<table>
+    <form action="/costumersEdit/put/json" method="GET">
+        <td>
+            <label><b>Hvilken konti skal justeres?</b></label>
+        </td>
+        <tr>
+            <td>
+                <label>ID:</label>
+            </td>
+            <td>
+                <input type="number" name="uidBody" required="" id="input">
+            </td>
+            <td> <button type="submit" class="btn btn-dark">Find</button></td>
+            <td><button onclick="vaerdiSet()"></button></td>
+        </tr>
+        <tr></table>
+        <Tilføj tag som får værdien fra uidBody, og hent værdien i js-fil>
+            <p name="demo" id="demo">1</p>
+        </form>
+        -->
+    

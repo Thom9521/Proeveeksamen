@@ -4,11 +4,7 @@ var MongoClient = require('mongodb').MongoClient;
 mongo = require('mongodb')
 var url = "mongodb://localhost:27017/";
 
-/* GET home page. *//*
-router.get('/', function(req, res, next) {
-  res.render('costumers', { title: 'Kunder' });
-});
-*/
+
 //Hent med GET
 router.get('/', function (req, res, next) {
   MongoClient.connect(url, function (err, db) {

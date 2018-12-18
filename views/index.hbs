@@ -13,15 +13,5 @@
   <input type="password" name="password"><br><br>
   <button type="button" class="btn btn-dark" onclick="check(this.form)">Login</button>
 </form>
-<script language="javascript">
-  function check(form) /*function to check userid & password*/ {
-    /*the following code checkes whether the entered userid and password are matching*/
-    if (form.userid.value == "admin" && form.password.value == "123") {
-      window.location.replace('frontpage')
-    }
-    else {
-      alert("Forkert brugernavn eller kodeord ") /*displays error message*/
-    }
-  }
-</script>
+
 <p id="date"></p>
